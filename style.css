@@ -1,0 +1,163 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #CBC4BC; /* AB InBev Grey */
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 2em 1em 1em;
+  background: #fff;
+  border-bottom: 4px solid #BA0C2F; /* AB InBev Red */
+}
+.logo {
+  width: 320px;
+  margin-bottom: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  color: #BA0C2F; /* AB InBev Red */
+  margin: 0.2em 0 0.4em;
+}
+.subtitle {
+  color: #012169; /* Efes Blue */
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#quiz-container {
+  max-width: 700px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  padding: 2em;
+}
+
+.question {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.answer-btn {
+  padding: 1em;
+  background: #efefef;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.answer-btn:hover, .answer-btn.selected {
+  background: #012169; /* Efes Blue */
+  color: #fff;
+}
+
+.next-btn, .download-btn {
+  margin-top: 2em;
+  padding: 1em 2em;
+  font-size: 1.1em;
+  border-radius: 8px;
+  border: none;
+  background: #BA0C2F; /* AB InBev Red */
+  color: #fff;
+  cursor: pointer;
+}
+.download-btn {
+  background: #012169; /* Efes Blue */
+  margin-right: 1em;
+}
+.result-title {
+  font-size: 2em;
+  color: #012169; /* Efes Blue */
+  margin-top: 0;
+}
+.result-text {
+  margin-top: 1em;
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.3;
+}
+footer {
+  text-align: center;
+  padding: 2em 1em 1em;
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 3em;
+}
+
+.result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2em;
+  margin-top: 2em;
+}
+
+.download-btn, .next-btn {
+  min-width: 260px;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.restart-btn {
+  margin-top: 1.6em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Модальное окно для видеоинструкции */
+.modal-bg {
+  position: fixed;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2em;
+  max-width: 640px;
+  box-shadow: 0 10px 32px rgba(0,0,0,0.14);
+  position: relative;
+}
+.modal-content video {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1em;
+}
+.close-btn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: #BA0C2F;
+  color: #fff;
+  border: none;
+  font-size: 1.6em;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.question-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.2em;
+  margin-top: 2.5em;
+}
